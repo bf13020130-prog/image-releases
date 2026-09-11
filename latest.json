@@ -1,23 +1,21 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.18.2",
-  "publishedAt": "2026-09-11T07:46:10.087Z",
+  "version": "0.18.3",
+  "publishedAt": "2026-09-11T08:02:58.470Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[新增] GPT Image 2.5 生图模型增加“极高”与“最高”质量档位，并在生图工作台、画布设置和请求层按实际模型能力显示与传递 `xhigh`、`max`。",
-    "[修复] 同步 Web、Desktop 与 Canvas Agent 依赖安装流程并更新现有版本范围内的安全修复，恢复 GitHub runner 的可复现安装并清除高危依赖审计项。",
-    "[修复] Electron 44 打包前显式准备按需下载的运行时，并禁止构建器在版本 tag 环境中绕过签名发布流程隐式上传。",
-    "[修复] 桌面更新发布流程改用可重试的 GitHub Contents API 同步根清单，通过 Git blob raw 原样回读二进制签名，并对 Release 与根清单执行字节比对和客户端公钥验签。",
-    "[调整] 桌面更新工作流默认发布 Windows 无密钥包，仅在明确启用且 Apple 凭据齐全时构建并加入 macOS 签名更新资产。"
+    "[修复] 桌面端点击右上角版本号时立即重新检查更新，并限制更新说明滚动区域，确保检查、下载和安装按钮始终可见。",
+    "[修复] 生图工作台结果缩略图与统一放大预览恢复右键“复制图片”“下载图片”，保留预览工具栏的同名操作。",
+    "[调整] 选择 `nano-banana-2` 或 `seedream-5.0-pro` 时默认使用 2K 分辨率，工作台、画布节点与 Agent 工作台入口保持一致。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.18.2",
-      "name": "image-0.18.2-win-x64.zip",
-      "size": 333897699,
-      "sha256": "45dc9e126d268f96867f4730d5ba93b41770cc96a27ec0e99635271974f7bbe4"
+      "tag": "v0.18.3",
+      "name": "image-0.18.3-win-x64.zip",
+      "size": 333898014,
+      "sha256": "05f69b82617283b6dc1f03b67ba14048053a4e83b17984fe35005d7b59f0e6c0"
     }
   }
 }
