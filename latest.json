@@ -1,21 +1,41 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.18.3",
-  "publishedAt": "2026-09-11T08:02:58.470Z",
+  "version": "0.18.4",
+  "publishedAt": "2026-09-11T09:54:02.425Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[修复] 桌面端点击右上角版本号时立即重新检查更新，并限制更新说明滚动区域，确保检查、下载和安装按钮始终可见。",
-    "[修复] 生图工作台结果缩略图与统一放大预览恢复右键“复制图片”“下载图片”，保留预览工具栏的同名操作。",
-    "[调整] 选择 `nano-banana-2` 或 `seedream-5.0-pro` 时默认使用 2K 分辨率，工作台、画布节点与 Agent 工作台入口保持一致。"
+    "[修复] 桌面更新使用原生文件系统校验 ASAR 归档，避免下载完成后误报更新包无效；下载进度显示整数百分比与 MiB 容量。",
+    "[优化] 更新重试复用哈希匹配的完整安装包，并明确显示下载后的校验阶段。",
+    "[新增] 同步发布 Apple Silicon ARM64 与 Intel x64 DMG，按当前架构选择更新包；无 Apple 公证凭据时使用手动安装流程。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.18.3",
-      "name": "image-0.18.3-win-x64.zip",
-      "size": 333898014,
-      "sha256": "05f69b82617283b6dc1f03b67ba14048053a4e83b17984fe35005d7b59f0e6c0"
+      "tag": "v0.18.4",
+      "name": "image-0.18.4-win-x64.zip",
+      "size": 333898259,
+      "sha256": "afdddd8b44f4c9484ca08b5518b8c974a48ac9c550231603a96e7d9f03cf5189"
+    },
+    "darwin-arm64": {
+      "kind": "mac-electron-updater",
+      "tag": "v0.18.4",
+      "name": "image-0.18.4-mac-arm64.zip",
+      "size": 271253175,
+      "sha256": "a70ddd0c74ddfc73f5e543aef769554dc8bab3c840295c2f9eca620640991355",
+      "dmgName": "image-0.18.4-mac-arm64.dmg",
+      "dmgSha256": "88649c0bcf35fe5f937ae4e905e51849e355a032067d4fa918779bb0e9e40966",
+      "dmgSize": 268903796
+    },
+    "darwin-x64": {
+      "kind": "mac-electron-updater",
+      "tag": "v0.18.4",
+      "name": "image-0.18.4-mac-x64.zip",
+      "size": 288834472,
+      "sha256": "de6f47b70de5cc125b41ded86788a9c700b7a4366e80b116aaf1deef19a70b36",
+      "dmgName": "image-0.18.4-mac-x64.dmg",
+      "dmgSha256": "ef92e261af286add6845433b9da45d2b32d99e1e0b40265e20130fef4a9519ff",
+      "dmgSize": 286210734
     }
   }
 }
