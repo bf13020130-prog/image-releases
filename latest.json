@@ -1,43 +1,39 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.18.5",
-  "publishedAt": "2026-09-14T07:46:48.432Z",
+  "version": "0.18.6",
+  "publishedAt": "2026-09-15T03:43:31.021Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[修复] Windows 文件夹版按各自数据目录建立单实例锁，避免不同安装目录互相阻挡；切换文本配置前等待旧 Agent 实际退出。",
-    "[修复] 内置 Agent 使用应用文本通道的模型与认证，修复连接成功后模型请求缺少 Key 的问题。",
-    "[修复] 首次连接期间线程初始化使历史请求失效时，正确释放加载状态，避免对话已就绪但输入框持续禁用。",
-    "[新增] Agent 连接页提供自动、外部和内置来源选择，补充 Codex MCP 指引与 ChatGPT 接入范围说明。",
-    "[修复] 更新界面订阅校验中状态，确保下载完成后的提示及取消按钮禁用状态生效。"
+    "[修复] 更新下载使用 Electron 网络栈并支持失败后断点续传，保留分片与脱敏底层错误日志，改善系统代理和弱网络环境下的可靠性。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.18.5",
-      "name": "image-0.18.5-win-x64.zip",
-      "size": 333904287,
-      "sha256": "d7f31a1a8101a8f3761f7e80121ca6fb6ccf2042506e50d2962e7852e50cd7f1"
+      "tag": "v0.18.6",
+      "name": "image-0.18.6-win-x64.zip",
+      "size": 333906653,
+      "sha256": "f38609b0f84e18e1050eaf1da4d66e656f71ccf896533ff0c0cb93e6a0b74234"
     },
     "darwin-arm64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.5",
-      "name": "image-0.18.5-mac-arm64.zip",
-      "size": 271259655,
-      "sha256": "c02837b48035bb3cf9e6490bd83ce0ccaa458b7e7a89036bef21d283d5251b5b",
-      "dmgName": "image-0.18.5-mac-arm64.dmg",
-      "dmgSha256": "a6806015e8fac6eaa378fa67ab9bbcff5bcc5d6fa1bf2c045c67848443589917",
-      "dmgSize": 268890507
+      "tag": "v0.18.6",
+      "name": "image-0.18.6-mac-arm64.zip",
+      "size": 271262040,
+      "sha256": "2815b38c6579144059524e80686bb0112407875d063b88a2f83857d096e918d7",
+      "dmgName": "image-0.18.6-mac-arm64.dmg",
+      "dmgSha256": "40751555dbbe02b1781bd0f3a935228d7d7a260c8cf806d732a52a1c1e1779d0",
+      "dmgSize": 268891733
     },
     "darwin-x64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.5",
-      "name": "image-0.18.5-mac-x64.zip",
-      "size": 288840965,
-      "sha256": "16b6190bf2d19d1a2a8080610b619a9bea9612a0b2e50dd76a77d0837d10817c",
-      "dmgName": "image-0.18.5-mac-x64.dmg",
-      "dmgSha256": "c11e775f14b71288616f12e338f0d2ad1b7dab37415ecc1611a4f8bada3cc153",
-      "dmgSize": 286223913
+      "tag": "v0.18.6",
+      "name": "image-0.18.6-mac-x64.zip",
+      "size": 288843350,
+      "sha256": "5195988e56bc4f28571b1f53a47487e567fa7aec392ebf92aaa1110ce37dc58d",
+      "dmgName": "image-0.18.6-mac-x64.dmg",
+      "dmgSha256": "ccff9f7f9bcce6679a2c75e5578d64dfedcd8a3125b10124f8e60a91d08a674a",
+      "dmgSize": 286237463
     }
   }
 }
