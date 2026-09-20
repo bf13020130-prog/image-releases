@@ -1,39 +1,42 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.18.6",
-  "publishedAt": "2026-09-15T03:43:31.021Z",
+  "version": "0.18.7",
+  "publishedAt": "2026-09-20T05:52:13.353Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[修复] 更新下载使用 Electron 网络栈并支持失败后断点续传，保留分片与脱敏底层错误日志，改善系统代理和弱网络环境下的可靠性。"
+    "[新增] 生图记录支持一键删除完全失败任务，保留部分成功、生成中和可恢复图片的记录。",
+    "[修复] 删除生成记录时回收独占图片与派生缓存，保护共享引用，并提供可恢复回收队列及未使用图片检查入口。",
+    "[优化] 适配上游 v0.19.0 的轻量预览、画布拖动与连线裁剪、操作按钮按需显示，并增加 ZCode 插件发现配置。",
+    "[新增] 生图提示词框支持底边拖动、键盘调高和本地高度记忆，缩小窗口后可恢复用户设定。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.18.6",
-      "name": "image-0.18.6-win-x64.zip",
-      "size": 333906653,
-      "sha256": "f38609b0f84e18e1050eaf1da4d66e656f71ccf896533ff0c0cb93e6a0b74234"
+      "tag": "v0.18.7",
+      "name": "image-0.18.7-win-x64.zip",
+      "size": 333914208,
+      "sha256": "5ea661f3508ff3eacad31f0840e220f75dab64c254c29a8bf69a375492f09e07"
     },
     "darwin-arm64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.6",
-      "name": "image-0.18.6-mac-arm64.zip",
-      "size": 271262040,
-      "sha256": "2815b38c6579144059524e80686bb0112407875d063b88a2f83857d096e918d7",
-      "dmgName": "image-0.18.6-mac-arm64.dmg",
-      "dmgSha256": "40751555dbbe02b1781bd0f3a935228d7d7a260c8cf806d732a52a1c1e1779d0",
-      "dmgSize": 268891733
+      "tag": "v0.18.7",
+      "name": "image-0.18.7-mac-arm64.zip",
+      "size": 271270441,
+      "sha256": "0289f951f8a3803542526669774f2b0c35d6becb1ca2392e9c849da16fda9fbb",
+      "dmgName": "image-0.18.7-mac-arm64.dmg",
+      "dmgSha256": "eaae22ce26c0096c6631e9f137adc501ace2a22a826a5a3a5969870645683843",
+      "dmgSize": 268898680
     },
     "darwin-x64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.6",
-      "name": "image-0.18.6-mac-x64.zip",
-      "size": 288843350,
-      "sha256": "5195988e56bc4f28571b1f53a47487e567fa7aec392ebf92aaa1110ce37dc58d",
-      "dmgName": "image-0.18.6-mac-x64.dmg",
-      "dmgSha256": "ccff9f7f9bcce6679a2c75e5578d64dfedcd8a3125b10124f8e60a91d08a674a",
-      "dmgSize": 286237463
+      "tag": "v0.18.7",
+      "name": "image-0.18.7-mac-x64.zip",
+      "size": 288851750,
+      "sha256": "50d0a0f443cfb9f8b1a8b4ecbf7665f6cd3958ea6f291b2d232f8ebe4dc29ba8",
+      "dmgName": "image-0.18.7-mac-x64.dmg",
+      "dmgSha256": "36adcb5e51df02adcca49c94868bbf45a53a7b90107e225f117ec5e40dd87d8c",
+      "dmgSize": 286275110
     }
   }
 }
