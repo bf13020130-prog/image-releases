@@ -1,42 +1,45 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.18.7",
-  "publishedAt": "2026-09-20T05:52:13.353Z",
+  "version": "0.19.0",
+  "publishedAt": "2026-09-30T06:52:23.489Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[新增] 生图记录支持一键删除完全失败任务，保留部分成功、生成中和可恢复图片的记录。",
-    "[修复] 删除生成记录时回收独占图片与派生缓存，保护共享引用，并提供可恢复回收队列及未使用图片检查入口。",
-    "[优化] 适配上游 v0.19.0 的轻量预览、画布拖动与连线裁剪、操作按钮按需显示，并增加 ZCode 插件发现配置。",
-    "[新增] 生图提示词框支持底边拖动、键盘调高和本地高度记忆，缩小窗口后可恢复用户设定。"
+    "[修复] 画布多图结果按子图隔离生成、取回、取消和重试，新增开发环境受限图片取回代理并区分获取失败与结果保存失败。",
+    "[修复] 画布批量生图按子图标明参考图、请求和结果保存失败阶段，直接读取本地参考图片并补齐脱敏诊断。",
+    "[修复] 画布补齐生成计时、批量图片拖出与扩图尺寸不符时的结果展示，并支持预览按百分比选择缩放。",
+    "[修复] 统一画布生成配置与重试模型，完善引用读取失败、取消及已有结果重新获取的生命周期和诊断。",
+    "[优化] 图片预览显示真实像素缩放比例，改善参考图排序按钮在深浅主题下的辨识度。",
+    "[新增] 画布支持智能、网格和流程整理、连线显示控制及不改变主图与参考顺序的批量展示排序。",
+    "[新增] 图片节点支持 GPT Image 2.5 高分辨率频道拖框扩图，按自然尺寸扩展、超限等比缩小并保留原图与模型原始结果；服务商实际效果待验收。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.18.7",
-      "name": "image-0.18.7-win-x64.zip",
-      "size": 333914208,
-      "sha256": "5ea661f3508ff3eacad31f0840e220f75dab64c254c29a8bf69a375492f09e07"
+      "tag": "v0.19.0",
+      "name": "image-0.19.0-win-x64.zip",
+      "size": 335261774,
+      "sha256": "04891ca6da005fa64c74e60fc702d32a6880b26c53b9ddc263f00cd7882a801c"
     },
     "darwin-arm64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.7",
-      "name": "image-0.18.7-mac-arm64.zip",
-      "size": 271270441,
-      "sha256": "0289f951f8a3803542526669774f2b0c35d6becb1ca2392e9c849da16fda9fbb",
-      "dmgName": "image-0.18.7-mac-arm64.dmg",
-      "dmgSha256": "eaae22ce26c0096c6631e9f137adc501ace2a22a826a5a3a5969870645683843",
-      "dmgSize": 268898680
+      "tag": "v0.19.0",
+      "name": "image-0.19.0-mac-arm64.zip",
+      "size": 272595287,
+      "sha256": "81def250b303be709e2d5a19362a7051a57ccd964324a99f8a95a5644b87f430",
+      "dmgName": "image-0.19.0-mac-arm64.dmg",
+      "dmgSha256": "a10fb72838c39f538883bfc8fcf8fa4e5bccaca9f140cf3832c50eb4df50f805",
+      "dmgSize": 270223366
     },
     "darwin-x64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.18.7",
-      "name": "image-0.18.7-mac-x64.zip",
-      "size": 288851750,
-      "sha256": "50d0a0f443cfb9f8b1a8b4ecbf7665f6cd3958ea6f291b2d232f8ebe4dc29ba8",
-      "dmgName": "image-0.18.7-mac-x64.dmg",
-      "dmgSha256": "36adcb5e51df02adcca49c94868bbf45a53a7b90107e225f117ec5e40dd87d8c",
-      "dmgSize": 286275110
+      "tag": "v0.19.0",
+      "name": "image-0.19.0-mac-x64.zip",
+      "size": 290176595,
+      "sha256": "1188772d6db75c1889417318ed8f75b1a27cbaf6c303ea93e6d33f38fcfc5108",
+      "dmgName": "image-0.19.0-mac-x64.dmg",
+      "dmgSha256": "f7d6eb0f3842a4c8bcf4831d5e3a5c89d8a6cc30fd7e0a5b7bce8a9e5d59cf7e",
+      "dmgSize": 287580664
     }
   }
 }
