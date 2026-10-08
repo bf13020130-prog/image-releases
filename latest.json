@@ -1,49 +1,40 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "0.20.0",
-  "publishedAt": "2026-10-08T09:36:27.044Z",
+  "version": "0.20.1",
+  "publishedAt": "2026-10-08T12:30:19.074Z",
   "minimumUpdaterVersion": 1,
   "notes": [
-    "[修复] 规格渠道配置拆分渠道与默认模型选择，渠道标签仅显示名称并约束弹窗宽度。",
-    "[修复] 图片与视频取回按可用网络栈顺序切换，逐结果校验并区分获取与本地保存失败，已有结果重试不重新生成。",
-    "[修复] 画布与生图工作台接入持久化任务执行器，切页继续执行，重启仅恢复原任务 ID 或结果来源，未知提交不自动重发。",
-    "[新增] 新增 Atlas Cloud 与 MiniMax V2 原生协议及能力限定，Seedream 4.7/5.0 Pro 按参考图自动选择文生或编辑，普通数量采用独立单图任务。",
-    "[新增] 新增 MiniMax-H3 独立视频工作台与画布入口，支持多模态参考、作品管理和仅重新获取的恢复流程。",
-    "[修复] 修复 Seedream 文生/编辑入口路由与尺寸诊断阻断，统一同渠道家族选项；区分本地预校验、配置网关响应和未知上游状态，并修正 H3 画布多参考角色绑定。",
-    "[修复] 修复 H3 开发页原生 V2 请求的同源代理，画布参数改为合法枚举选择，非法值提示待选并支持应用默认参数。",
-    "[修复] 修复扩图配置弹窗遮挡，移除原图硬贴与羽化合成，保留模型原始结果并区分尺寸不符与保护区改动，失败不自动重复生成。",
-    "[修复] H3 视频预览补齐首帧解码校验、播放状态与错误提示，工作台和画布支持刷新本地结果或仅重新获取原任务，不重新生成。",
-    "[修复] 画布显式切换 H3 时初始化原生合法参数，保留合法 H3 参数，不静默改写存量节点。",
-    "[新增] H3 工作台与画布支持按原任务 ID 将 768P 再生成至 2K，收费确认后创建独立结果，保留原视频并防止跨入口重复提交。"
+    "[修复] 生图与视频工作台、画布设置在历史频道或模型失效时不再在渲染阶段崩溃或静默切换频道；恢复和重试会明确提示并阻止提交未知配置。",
+    "[新增] 生图、视频、MiniMax-H3 和 Agent 提示词输入框支持直接粘贴剪贴板图片，自动加入参考图并保留文本粘贴行为。"
   ],
   "assets": {
     "win32-x64": {
       "kind": "portable-folder",
-      "tag": "v0.20.0",
-      "name": "image-0.20.0-win-x64.zip",
-      "size": 335309035,
-      "sha256": "ff67a8e3fa5d155074450ffe5d7381b8a6f3bd0f75dc62fdc83bd767770abdb2"
+      "tag": "v0.20.1",
+      "name": "image-0.20.1-win-x64.zip",
+      "size": 335309988,
+      "sha256": "b33599e658b4f13b40ae16a35645d3916e505916265ca6817a1ef0eef8ae39a1"
     },
     "darwin-arm64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.20.0",
-      "name": "image-0.20.0-mac-arm64.zip",
-      "size": 272641775,
-      "sha256": "af68c73ded9d364059d7c93873174c19dd298c0845a1aa1fb8fc1ac7fee94127",
-      "dmgName": "image-0.20.0-mac-arm64.dmg",
-      "dmgSha256": "e8fcab6aaf74a78835c7a06cfc6ad0a2562fe5ebd7f2e6403179083ee8f461c6",
-      "dmgSize": 270280182
+      "tag": "v0.20.1",
+      "name": "image-0.20.1-mac-arm64.zip",
+      "size": 272642354,
+      "sha256": "1f45b25413c98e018dbbd6a154a299b8bf9d2bf5f33bd0d50282ecb0a016237e",
+      "dmgName": "image-0.20.1-mac-arm64.dmg",
+      "dmgSha256": "89a3e5cc4b98f7695040b23fff12c66904c4e289fd385f0dbc7313c8ddaff45a",
+      "dmgSize": 270264729
     },
     "darwin-x64": {
       "kind": "mac-electron-updater",
-      "tag": "v0.20.0",
-      "name": "image-0.20.0-mac-x64.zip",
-      "size": 290223092,
-      "sha256": "0abad2197a3ca3dd7f483ac0bb592116fe4c5de94e78fcc4f94504d1ebdb96a6",
-      "dmgName": "image-0.20.0-mac-x64.dmg",
-      "dmgSha256": "a3a7f72fb0aaf5f2cf756302c161179efea70913891ea263c621e66e4d4bc449",
-      "dmgSize": 287608820
+      "tag": "v0.20.1",
+      "name": "image-0.20.1-mac-x64.zip",
+      "size": 290223665,
+      "sha256": "de2bfc24981f3ed6a2f6ea655a3a5ad6cd5bd838e0365968f82cf1811c340a00",
+      "dmgName": "image-0.20.1-mac-x64.dmg",
+      "dmgSha256": "687813772b64207a3c446ead495b0c61acd6d155705254b3147a1d408363d09d",
+      "dmgSize": 287602745
     }
   }
 }
